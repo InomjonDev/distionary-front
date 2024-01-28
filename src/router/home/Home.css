@@ -1,0 +1,19 @@
+.home {
+	width: calc(100% - 300px);
+	height: 100%;
+	float: right;
+}
+
+.home-logo {
+	display: none;
+}
+
+@media screen and (max-width: 1050px) {
+	.home {
+		width: 100%;
+	}
+	.home-logo {
+		display: block;
+		padding-top: 20px;
+	}
+}

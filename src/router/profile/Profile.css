@@ -1,0 +1,26 @@
+.profile {
+	width: calc(100% - 300px);
+	float: right;
+	padding: 20px;
+	color: #fff;
+}
+
+.profile__wrapper {
+	display: flex;
+	align-items: flex-start;
+	gap: 100px;
+}
+
+.profile__img {
+	width: 350px;
+}
+
+.profile__img img {
+	width: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+	.profile {
+		width: 100%;
+	}
+}

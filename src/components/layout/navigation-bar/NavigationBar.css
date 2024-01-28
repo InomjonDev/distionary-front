@@ -1,0 +1,33 @@
+.navigation-bar {
+	display: none;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	color: #fff;
+	padding: 10px;
+	border-top: 0.5px solid #ffffff6d;
+	background-color: #0b0d0f;
+}
+
+.navigation-bar__list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+}
+
+.navigation-bar__item {
+	color: #c9c1c1;
+}
+
+.navigation-bar__item-active {
+	color: #fff;
+}
+
+@media screen and (max-width: 1050px) {
+	.navigation-bar {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}

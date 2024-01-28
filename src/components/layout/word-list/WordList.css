@@ -1,0 +1,119 @@
+.word-list {
+	width: 100%;
+	color: #fff;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.word-list__wrapper {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 10px 0;
+}
+
+.word-list__names {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0px 20px 10px 20px;
+	border-bottom: 1px solid #ffffff6d;
+}
+
+.word-list__names-item {
+	width: 30%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.word-list__names-type {
+	width: 5%;
+	display: flex;
+	justify-content: center;
+}
+
+.word-list__names-delete {
+	width: 5%;
+}
+
+.word-list__lists {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.word-list__item {
+	width: 100%;
+	padding: 10px 20px;
+	display: flex;
+	align-items: flex-start;
+	/* justify-content: center; */
+}
+
+.word-list__word {
+	width: 30%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.word-list__item-word-type {
+	width: 5%;
+}
+
+.word-list__item-delete {
+	width: 5%;
+}
+
+.word-list__item-delete button {
+	background-color: transparent;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	transition: all 0.3s 0s ease;
+	width: 10px;
+}
+
+.word-list__item-delete button:hover {
+	color: #c9c1c1;
+}
+
+.word-list__item-delete.disable {
+	color: #c9c1c1;
+}
+
+.word-list__not-found {
+	width: 100%;
+	text-align: center;
+}
+
+/* Media */
+
+@media screen and (max-width: 1050px) {
+	.word-list__wrapper {
+		display: flex;
+		align-items: center;
+	}
+	.word-list__names span {
+		justify-content: center;
+	}
+	.word-list__word {
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		/* display: inline-block; */
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.word-list__names span {
+		font-size: 10px;
+	}
+	.word-list__item {
+		font-size: 12px;
+		padding: 10px 5px;
+	}
+}
