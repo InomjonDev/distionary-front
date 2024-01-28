@@ -3,6 +3,7 @@ import "./WordList.css";
 import { Trash2 } from "lucide-react";
 import { getItem } from "@/components/ui/helpers/storage";
 import { useDeleteWordListMutation } from "@/store/api/word-list.api";
+import { useSelector } from "react-redux";
 
 function getShortForm(wordType) {
 	const wordTypeMappings = {
@@ -19,7 +20,8 @@ function getShortForm(wordType) {
 }
 
 function WordList() {
-	const { data } = useGetWordListsQuery();
+	const { searchTerm } = useSelector(state => state.search);
+	const { data } = useGetWordListsQuery(searchTerm);
 	const [deleteWordList, { isLoading: deleteLoading }] =
 		useDeleteWordListMutation();
 	const { _id: authorId } = getItem("user");

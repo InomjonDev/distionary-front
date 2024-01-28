@@ -12,8 +12,10 @@ export default defineConfig({
 			store: `${path.resolve(__dirname, "./src/store/")}`,
 			router: `${path.resolve(__dirname, "./src/router")}`,
 			ui: `${path.resolve(__dirname, "./src/ui")}`,
+			assets: `${path.resolve(__dirname, "./src/assets")}`,
+			helpers: `${path.resolve(__dirname, "./src/helpers")}`,
 			static: `${path.resolve(__dirname, "./src/static")}`,
-			assets: `${path.resolve(__dirname, "./src/assets")}`
+			hooks: `${path.resolve(__dirname, "./src/hooks")}`
 		}
 	}
 });

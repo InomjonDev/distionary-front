@@ -3,13 +3,14 @@
 		"baseUrl": ".",
 		"paths": {
 			"@/*": ["./src/*", "./dist/*", ""],
-			"@store/*": ["src/store/*"],
 			"@components/*": ["src/components/*"],
-			"@ui/*": ["src/components/ui/*"],
+			"@store/*": ["src/store/*"],
 			"@router/*": ["src/router/*"],
+			"@ui/*": ["src/components/ui/*"],
 			"@assets/*": ["src/assets/*"],
 			"@helpers/*": ["src/components/ui/helpers/*"],
-			"@static/*": ["src/static/*"]
+			"@static/*": ["src/static/*"],
+			"@hooks/*": ["src/hooks/*"]
 		}
 	}
 }
