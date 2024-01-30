@@ -4,7 +4,7 @@ import { useGetUserByIdQuery } from "@/store/api/user.api";
 import { getItem, removeItem } from "@/helpers/storage";
 
 import { Logo, UserView } from "@/components/ui";
-import { LogOut, PlusCircle } from "lucide-react";
+import { LogOut, PlusCircle, Users } from "lucide-react";
 
 import "./Sidebar.css";
 
@@ -41,6 +41,16 @@ function Sidebar() {
 								<span>Add unit words</span>
 							</Link>
 						</li>
+						{data?.innerData?.isAdmin === "true" ? (
+							<li>
+								<Link to={"/admin/see-user"} className="sidebar__main-item">
+									<Users />
+									<span>See users</span>
+								</Link>
+							</li>
+						) : (
+							<></>
+						)}
 					</ul>
 				</div>
 				<div className="sidebar__bottom">
