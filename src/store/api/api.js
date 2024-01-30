@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-// const API_URL = "http://localhost:8000";
-const API_URL = "https://distionary-back-public.onrender.com";
+const API_URL = "http://localhost:8000";
+// const API_URL = "https://distionary-back-public.onrender.com";
 
 export const api = createApi({
 	reducerPath: "api",
@@ -19,7 +19,11 @@ export const api = createApi({
 			]
 		}),
 		getWordLists: builder.query({
-			query: searchValue => `/get/word-lists?value=${searchValue}`,
+			query: args => {
+				const { categoryTerm, searchTerm } = args;
+
+				return `/get/word-lists?category=${categoryTerm}&value=${searchTerm}`;
+			},
 			providesTags: () => [
 				{
 					type: "WordLists"

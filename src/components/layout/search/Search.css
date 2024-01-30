@@ -21,12 +21,18 @@
 	width: 400px;
 	display: flex;
 	align-items: center;
+	gap: 20px;
 }
 
 .search__input {
 	padding: 10px 10px;
 	width: 100%;
 	outline: none;
+	height: 40px;
+}
+
+.search__form select {
+	height: 40px;
 }
 
 @media screen and (max-width: 1200px) {

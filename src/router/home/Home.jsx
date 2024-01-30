@@ -1,4 +1,4 @@
-import { Search, WordList } from "@/components/layout";
+import { Search, WordList, Category } from "@/components/layout";
 
 import { Logo } from "@/components/ui";
 

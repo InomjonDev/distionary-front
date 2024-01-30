@@ -1,4 +1,4 @@
-import { getItem } from "@/components/ui/helpers/storage";
+import { getItem } from "@/helpers/storage";
 import { Navigate, Outlet } from "react-router-dom";
 
 function Auth() {

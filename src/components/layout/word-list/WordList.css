@@ -7,7 +7,6 @@
 
 .word-list__wrapper {
 	display: flex;
-	align-items: center;
 	flex-direction: column;
 	padding: 10px 0;
 }
@@ -15,7 +14,7 @@
 .word-list__names {
 	width: 100%;
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	padding: 0px 20px 10px 20px;
 	border-bottom: 1px solid #ffffff6d;
 }
@@ -23,14 +22,14 @@
 .word-list__names-item {
 	width: 30%;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	align-items: flex-start;
+	justify-content: flex-start;
 }
 
 .word-list__names-type {
 	width: 5%;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 }
 
 .word-list__names-delete {
@@ -40,7 +39,7 @@
 .word-list__lists {
 	width: 100%;
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	flex-direction: column;
 	justify-content: center;
 }
@@ -57,7 +56,7 @@
 	width: 30%;
 	display: flex;
 	align-items: flex-start;
-	justify-content: center;
+	justify-content: flex-start;
 }
 
 .word-list__item-word-type {
@@ -75,6 +74,10 @@
 	cursor: pointer;
 	transition: all 0.3s 0s ease;
 	width: 10px;
+}
+
+.word-list__item-unit {
+	width: 10%;
 }
 
 .word-list__item-delete button:hover {
@@ -95,16 +98,13 @@
 @media screen and (max-width: 1050px) {
 	.word-list__wrapper {
 		display: flex;
-		align-items: center;
 	}
 	.word-list__names span {
-		justify-content: center;
+		justify-content: space-between;
 	}
 	.word-list__word {
 		display: flex;
-		align-items: flex-start;
-		justify-content: center;
-		/* display: inline-block; */
+		justify-content: space-between;
 	}
 }
 
@@ -115,5 +115,7 @@
 	.word-list__item {
 		font-size: 12px;
 		padding: 10px 5px;
+		display: flex;
+		justify-content: space-between;
 	}
 }

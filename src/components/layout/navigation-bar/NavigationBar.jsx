@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Home, PlusCircle, User2 } from "lucide-react";
 
 import "./NavigationBar.css";
-import { getItem } from "@/components/ui/helpers/storage";
+import { getItem } from "@/helpers/storage";
 
 function NavigationBar() {
 	const { _id: userId } = getItem("user") || "1";

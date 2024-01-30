@@ -5,7 +5,7 @@ import {
 	useCreateSignUpMutation
 } from "@/store/api/user.api";
 
-import { getItem, setItem } from "@/components/ui/helpers/storage";
+import { getItem, setItem } from "@/helpers/storage";
 
 import { useNavigate } from "react-router-dom";
 

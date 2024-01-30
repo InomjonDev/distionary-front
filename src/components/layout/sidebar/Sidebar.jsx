@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 
 import { useGetUserByIdQuery } from "@/store/api/user.api";
-import { getItem, removeItem } from "@/components/ui/helpers/storage";
+import { getItem, removeItem } from "@/helpers/storage";
 
 import { Logo, UserView } from "@/components/ui";
 import { LogOut, PlusCircle } from "lucide-react";

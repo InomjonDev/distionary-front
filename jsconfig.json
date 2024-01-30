@@ -8,7 +8,7 @@
 			"@router/*": ["src/router/*"],
 			"@ui/*": ["src/components/ui/*"],
 			"@assets/*": ["src/assets/*"],
-			"@helpers/*": ["src/components/ui/helpers/*"],
+			"@helpers/*": ["src/helpers/*"],
 			"@static/*": ["src/static/*"],
 			"@hooks/*": ["src/hooks/*"]
 		}

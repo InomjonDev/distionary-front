@@ -4,7 +4,7 @@ import { useCreateWordListMutation } from "@/store/api/word-list.api";
 import { useState } from "react";
 import { toast } from "react-toastify";
 
-import { getItem } from "@/components/ui/helpers/storage";
+import { getItem } from "@/helpers/storage";
 
 const initialState = {
 	english: "",
