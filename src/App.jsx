@@ -1,5 +1,14 @@
 import { Route, Routes, useLocation } from "react-router-dom";
-import { AdminAuth, Auth, CreateWordList, Home, Profile, Sign } from "./router";
+import {
+	AdminAuth,
+	AdminDashboard,
+	AdminSeeUsers,
+	Auth,
+	CreateWordList,
+	Home,
+	Profile,
+	Sign
+} from "./router";
 import { NavigationBar, Sidebar } from "./components/layout";
 
 import { ToastContainer } from "react-toastify";
@@ -17,7 +26,9 @@ function App() {
 					<Route path="/" element={<Home />} />
 					<Route path="/add-word-list" element={<CreateWordList />} />
 					<Route path="/profile/:userId" element={<Profile />} />
-					<Route path="/admin/*" element={<AdminAuth />}></Route>
+				</Route>
+				<Route path="/admin/" element={<AdminAuth />}>
+					<Route path="/admin/see-user" element={<AdminSeeUsers />} />
 				</Route>
 			</Routes>
 

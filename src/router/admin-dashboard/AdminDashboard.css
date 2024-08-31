@@ -1,0 +1,5 @@
+.admin-dashboard {
+	width: calc(100% - 300px);
+	color: #fff;
+	float: right;
+}

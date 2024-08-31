@@ -1,0 +1,36 @@
+.see-users {
+	width: calc(100% - 300px);
+	float: right;
+	color: #fff;
+	padding: 20px;
+}
+
+.see-users__wrapper {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.see-users__item {
+	width: 100%;
+	background-color: rgb(29, 32, 36);
+	height: 130px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 15px;
+	border-radius: 20px;
+}
+
+.see-users__img {
+	border-radius: 12px;
+	overflow: hidden;
+	max-height: 100px;
+}
+
+.see-users__img img {
+	object-fit: cover;
+	width: 100%;
+	height: 100px;
+}

@@ -8,7 +8,7 @@ function Logo() {
 	return (
 		<Link className="logo" to={"/"}>
 			<img src={Linear} alt="Logo" />
-			<span>SPC Dictionary</span>
+			<span>A2 Dictionary</span>
 		</Link>
 	);
 }
