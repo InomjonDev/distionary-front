@@ -1,43 +1,28 @@
-import { Link, useLocation } from "react-router-dom";
-
-import { Home, PlusCircle, User2 } from "lucide-react";
-
-import "./NavigationBar.css";
-import { getItem } from "@/helpers/storage";
+import { getItem } from '@/helpers/storage'
+import { getNavItemClass } from '@/utils/navigationbar.utils'
+import { Home, PlusCircle, User2 } from 'lucide-react'
+import { Link, useLocation } from 'react-router-dom'
+import './NavigationBar.css'
 
 function NavigationBar() {
-	const { _id: userId } = getItem("user") || "1";
-	const { pathname } = useLocation();
+	const { _id: userId } = getItem('user') || '1'
+	const { pathname } = useLocation()
+
 	return (
-		<div className="navigation-bar">
-			<div className="navigation-bar__wrapper">
-				<ul className="navigation-bar__list">
-					<li
-						className={`navigation-bar__item ${
-							pathname === "/" ? "navigation-bar__item-active" : ""
-						}`}
-					>
-						<Link to={"/"}>
+		<div className='navigation-bar'>
+			<div className='navigation-bar__wrapper'>
+				<ul className='navigation-bar__list'>
+					<li className={getNavItemClass('/', pathname)}>
+						<Link to={'/'}>
 							<Home />
 						</Link>
 					</li>
-
-					<li
-						className={`navigation-bar__item ${
-							pathname === "/add-word-list" ? "navigation-bar__item-active" : ""
-						}`}
-					>
-						<Link to={"/add-word-list"}>
+					<li className={getNavItemClass('/add-word-list', pathname)}>
+						<Link to={'/add-word-list'}>
 							<PlusCircle />
 						</Link>
 					</li>
-					<li
-						className={`navigation-bar__item ${
-							pathname === `/profile/${userId}`
-								? "navigation-bar__item-active"
-								: ""
-						}`}
-					>
+					<li className={getNavItemClass(`/profile/${userId}`, pathname)}>
 						<Link to={`/profile/${userId}`}>
 							<User2 />
 						</Link>
@@ -45,7 +30,7 @@ function NavigationBar() {
 				</ul>
 			</div>
 		</div>
-	);
+	)
 }
 
-export default NavigationBar;
+export default NavigationBar
