@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
-const API_URL = 'http://localhost:8000'
-// const API_URL = 'https://distionary-back-public.onrender.com'
+// const API_URL = 'http://localhost:8000'
+const API_URL = 'https://distionary-back-public.onrender.com'
 
 export const api = createApi({
 	reducerPath: 'api',
